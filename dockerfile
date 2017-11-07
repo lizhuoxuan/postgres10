@@ -1,6 +1,6 @@
 FROM postgres:10.0
 
-MAINTAINER aruis (lovearuis@gmail.com)
+MAINTAINER xzlzx (307871680@qq.com)
 
 RUN apt-get -y update 
 RUN apt-get -y install gcc make
