@@ -3,7 +3,7 @@ FROM postgres:10.0
 MAINTAINER xzlzx (307871680@qq.com)
 
 RUN apt-get -y update 
-RUN apt-get -y install gcc gcc-c++ make wget unzip openssl openssl-devel pcre-devel
+RUN apt-get -y install gcc make wget unzip openssl libssl-dev
 RUN apt-get -y install postgresql-server-dev-10.0
 RUN apt-get -y install postgresql-10.0-plv8
 RUN apt-get -y install libmysqlclient-dev
