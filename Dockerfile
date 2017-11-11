@@ -1,4 +1,4 @@
-FROM postgres:10.0
+FROM postgres:10
 
 MAINTAINER xzlzx (307871680@qq.com)
 
