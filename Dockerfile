@@ -4,7 +4,6 @@ MAINTAINER xzlzx (307871680@qq.com)
 
 RUN apt-get -y update 
 RUN apt-get -y install gcc make wget unzip openssl libssl-dev
-RUN apt-get -y install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-centos10-10-1.noarch.rpm
 RUN apt-get -y install postgresql-server-dev
 RUN apt-get -y install postgresql-plv8
 RUN apt-get -y install libmysqlclient-dev
