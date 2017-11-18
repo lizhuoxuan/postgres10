@@ -13,8 +13,8 @@ RUN apt-get -y install default-libmysqlclient-dev
 RUN wget https://github.com/EnterpriseDB/mysql_fdw/archive/REL-2_3_0.zip && \
   unzip REL-2_3_0.zip && \
   cd mysql_fdw-REL-2_3_0 && make USE_PGXS=1 && make USE_PGXS=1 install && \
-  cd .. && rm -R mysql_fdw-REL-2_3_0 && \ 
-  wget https://codeload.github.com/postgrespro/pg_pathman/zip/1.4.8 && \
+  cd .. && rm -R mysql_fdw-REL-2_3_0
+RUN wget https://codeload.github.com/postgrespro/pg_pathman/zip/1.4.8 && \
   unzip 1.4.8 && \
   cd pg_pathman-1.4.8 && make USE_PGXS=1 && make USE_PGXS=1 install && \
   cd .. && rm -R 1.4.8 && \
