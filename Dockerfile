@@ -5,7 +5,7 @@ MAINTAINER xzlzx (307871680@qq.com)
 RUN apt-get -y update 
 RUN apt-get -y install gcc make wget unzip openssl libssl-dev
 RUN apt-get -y install libpq-dev
-RUN apt-get -y install postgresql-plv8
+
 RUN apt-get -y install libmysqlclient-dev
 RUN  wget https://github.com/EnterpriseDB/mysql_fdw/archive/REL-2_3_0.zip && \
   unzip REL-2_3_0.zip && \
