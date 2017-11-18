@@ -10,7 +10,7 @@ RUN apt-get -y install postgresql-contrib-10
 RUN apt-get -y install postgresql-server-dev-10
 RUN apt-get -y install postgresql-10-plv8
 RUN apt-get -y install default-libmysqlclient-dev
-RUN apt-get -y install libglobus-gssapi-gsi-dev
+RUN apt-get -y install libgssapi-krb5-2
 RUN wget https://github.com/EnterpriseDB/mysql_fdw/archive/REL-2_3_0.zip && \
   unzip REL-2_3_0.zip && \
   cd mysql_fdw-REL-2_3_0 && make USE_PGXS=1 && make USE_PGXS=1 install && \
