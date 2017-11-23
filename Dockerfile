@@ -10,8 +10,8 @@ RUN apt-get -y install postgresql-contrib-10
 RUN apt-get -y install postgresql-server-dev-10
 RUN apt-get -y install postgresql-10-plv8
 RUN apt-get -y install default-libmysqlclient-dev
-RUN wget https://github.com/EnterpriseDB/mysql_fdw/archive/REL-2_3_0.zip && \
-  unzip REL-2_3_0.zip && \
+RUN wget https://codeload.github.com/EnterpriseDB/mysql_fdw/zip/REL-2_3_0 && \
+  unzip mysql_fdw-REL-2_3_0.zip && \
   cd mysql_fdw-REL-2_3_0 && make USE_PGXS=1 && make USE_PGXS=1 install && \
   cd .. && rm -R mysql_fdw-REL-2_3_0
 RUN wget https://codeload.github.com/postgrespro/pg_pathman/zip/1.4.8 && \
