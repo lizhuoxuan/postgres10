@@ -3,7 +3,7 @@ FROM postgres:10
 MAINTAINER xzlzx (307871680@qq.com)
 
 RUN apt-get -y update 
-RUN apt-get -y install gcc make wget unzip openssl 
+RUN apt-get -y install gcc make wget unzip openssl apt-utils
 RUN apt-get -y install libpq-dev
 RUN apt-get -y install postgresql-contrib-10
 RUN apt-get -y install postgresql-server-dev-10
