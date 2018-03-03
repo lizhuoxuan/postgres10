@@ -2,8 +2,12 @@ FROM postgres:10
 
 MAINTAINER xzlzx (307871680@qq.com)
 
+RUN apt-get -y install apt-utils
 RUN apt-get -y update 
-RUN apt-get -y install gcc make wget libssl-dev
+RUN apt-get -y install wget
+RUN apt-get -y install libkrb5-dev
+RUN apt-get -y install libssl-dev
+RUN apt-get -y install gcc make
 RUN apt-get -y install postgresql-server-dev-10
 RUN apt-get -y install postgresql-10-plv8
 RUN apt-get -y install postgresql-10-mysql-fdw
